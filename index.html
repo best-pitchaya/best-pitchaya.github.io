@@ -1,98 +1,72 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitchaya Chantanapongvanij</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b767f8f263.js" crossorigin="anonymous"></script>
 
-<html>
-	<head>
-		<title>Pitchaya (Best) Chantanapongvanij</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/custom.css" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <style>
+      .image-container {
+        position: relative; /* This is necessary for absolute positioning of pseudo-elements */
+      }
+      .image-container::before, .image-container::after {
+        content: '';
+        position: absolute;
+        bottom: 50%; /* Adjust this value to position the lines vertically */
+        height: 2px; /* Height of the decorative lines */
+        background-color: #9CA3AF; /* Color of the lines */
+      }
+      .image-container::before {
+        left: -170%; /* Extend to the left edge of the white box */
+        right: 110%; /* Position relative to the image container */
+      }
+      .image-container::after {
+        left: 110%; /* Position relative to the image container */
+        right: -170%; /* Extend to the right edge of the white box */
+      }
+    </style>
+  </head>
+<body class="bg-gradient-to-r from-blue-900 to-gray-800 font-sans leading-normal tracking-normal">
 
-		<!-- Chrome, Safari, IE -->
-		<link rel="shortcut icon" href="favicon.ico">
+    <div class="flex flex-col items-center justify-center min-h-screen">
+        <!-- Icons Above Box, reduced top margin -->
+        <div class="space-x-6 mt-20 mb-4 text-4xl">
+            <a href="#me" class="text-white"> <i class="fa-solid fa-house"></i></a>
+            <a href="/best-pitchaya.github.io/pitchaya_resume.pdf" class="text-gray-300 hover:text-white"><i class="fas fa-file-alt"></i></a>
+            <a href="https://www.linkedin.com/in/pitchaya-chantanapongvanij-69748718a/" class="text-gray-300 hover:text-white"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/best-pitchaya/" class="text-gray-300 hover:text-white"><i class="fab fa-github"></i></a>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/37163697/" class="text-gray-300 hover:text-white"><i class="fas fa-folder"></i></a>
+            <a href="https://www.dropbox.com/scl/fo/9g770bjen8jhytrxwqoss/h?rlkey=tha58ad8mzwjts13vz501xmju&dl=0" class="text-gray-300 hover:text-white"><i class="fas fa-camera"></i></a>
+            <a href="mailto:best.pc2610@gmail.com" class="text-gray-300 hover:text-white"><i class="fas fa-envelope"></i></a>
+        </div>
 
-	</head>
-	<body>
+        <!-- Box with avatar and bio -->
+        <div class="bg-white rounded-lg shadow-lg px-6 py-20 text-center w-full max-w-4xl">
+            <div class="relative inline-block image-container"> <!-- Added wrapper div here -->
+              <img src="/best-pitchaya.github.io/assets/avatar.jpg" alt="avatar" class="h-48 w-48 rounded-full object-cover border-4 border-blue-500">
+            </div>            
+            <h1 class="text-2xl mt-20">Pitchaya (Best) Chantanapongvanij</h1>
+            <p class="mt-2">Currently: Software Engineer | Founder @ Gather</p>
+            <p class="mt-2">Bachelor of Arts - 
+              <a href="https://www.swarthmore.edu/english-literature" class="text-blue-500 hover:text-blue-700">English Literature</a> + 
+              <a href="https://www.swarthmore.edu/computer-science" class="text-blue-500 hover:text-blue-700">Computer Science</a> @ 
+              <a href="https://www.swarthmore.edu" class="text-blue-500 hover:text-blue-700">Swarthmore College</a>
+            </p>
+        </div>
 
-		<!-- Wrapper-->
-			<div id="wrapper">
+        <!-- Footer -->
+        <div class="mt-6 text-center">
+          <a href="#" class="text-white gotop js-gotop">
+            <i class="icon fa fa-long-arrow-up"></i>
+          </a>
+          <small class="text-gray-300 block mt-5 mb-4">© 2024; Updated 2024 :)</small>
+          <small>
+            <a href="http://github.com/best-pitchaya/best-pitchaya.github.io/issues/new" class="text-gray-300 hover:text-white">Have a suggestion for my website?</a>
+          </small>
+        </div>
+    </div>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<a href="#me" class="icon fa-home active"><span>Home</span></a>
-						<!-- <a href="#about" class="icon fa-user"><span>About</span></a> -->
-					<!-- 	<a href="#courses" class="icon fa-pencil"><span>Courses</span></a>
-						<a href="#reading" class="icon fa-book"><span>Reading</span></a> -->
-						<!--
-						<a href="#work" class="icon fa-folder"><span>Work</span></a>
-					
-						<a href="#bulb" class="icon fa-lightbulb-o"><span>Activities</span></a>
-					
-						<a href="#blog" class="icon fa-pencil"><span>Blog</span></a>
-					
-					-->
-						
-						<a href="https://www.linkedin.com/in/pitchaya-chantanapongvanij-69748718a/" class="icon fa-linkedin"><span>LinkedIn</span></a>
-						<a href="https://github.com/best-pitchaya" class="icon fa-github"><span>Github</span></a>
-						<a href="https://pubmed.ncbi.nlm.nih.gov/37163697/" class="icon fa-folder"><span>Publication</span></a>
-						<a href="pitchaya_resume.pdf" class="icon fa-file-text"><span>CV</span></a>
-						<a href="mailto:best.pc2610@gmail.com" class="icon fa-envelope"><span>Contact</span></a>
-						
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Me -->
-							<!-- <article id="me" class="panel" style="overflow-y: scroll;"> -->
-							<article id="me" class="panel">
-								<div id="me-avatar"  style="margin-left: -130px;">
-									::before
-								<img src="images/avatar.jpg" alt="" style="height: 210px; width: 210px; border-radius: 100%; margin-left: calc(50% - 95px); margin-top: 70px; z-index: 2;">		
-							    </div>					
-								<header>
-									<h1 style="font-size: 32px">Pitchaya (Best) Chantanapongvanij</h1>
-									
-									<p style="font-size: 18px"> 
-										Currently: <b>Founder @ Gather</b>
-										<br>
-									
-										<b>Bachelor of Arts</b> -
-										<b><a style="text-decoration:none;color:grey;" href="https://www.swarthmore.edu/english-literature">English Literature</a></b> 
-										+ <b><a style="text-decoration:none;color:grey;" href="https://www.swarthmore.edu/computer-science">Computer Science </a></b>
-										@ <b><a style="text-decoration:none;color:grey;" href="https://www.swarthmore.edu/">Swarthmore College</a></b> 
-										
-									</p>
-
-                </header>
-
-							</article>
-					</div>
-
-				<!-- Footer -->
-					<div id="footer">
-						<a href="#" class="gotop js-gotop"><i class="icon fa-long-arrow-up"></i></a>
-						<br>
-					
-						<ul class="copyright">
-							<li>&copy; 2024; Updated 2024 :)</li>
-						</ul>
-
-						<a href="http://github.com/best-pitchaya/best-pitchaya.github.io/issues/new" style="text-decoration: none">Have a suggestion for my website?</a>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/skel-viewport.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
